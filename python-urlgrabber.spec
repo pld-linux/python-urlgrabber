@@ -1,12 +1,12 @@
 Summary:	A high-level cross-protocol url-grabber
 Summary(pl):	Wysokopoziomowa biblioteka do wychwytywania URL-i do wielu protoko³ów
 Name:		python-urlgrabber
-Version:	2.9.6
+Version:	2.9.8
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://linux.duke.edu/projects/urlgrabber/download/urlgrabber-%{version}.tar.gz
-# Source0-md5:	e4afa725cf63b2684019f92cd8255671
+# Source0-md5:	621abdb5f839e139c7b27802f99bc72f
 URL:		http://linux.duke.edu/projects/urlgrabber/
 Provides:	urlgrabber
 BuildArch:	noarch
@@ -30,7 +30,11 @@ uwierzytelnianie, proxy itp.
 python setup.py build
 
 %install
-python setup.py install --root=$RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
+python setup.py install \
+	--root=$RPM_BUILD_ROOT
+
+rm -rf $RPM_BUILD_ROOT%{_docdir}/urlgrabber-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
