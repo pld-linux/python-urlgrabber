@@ -4,7 +4,7 @@ Name:		python-urlgrabber
 Version:	2.9.8
 Release:	1
 License:	LGPL
-Group:		Libraries
+Group:		Libraries/Python
 Source0:	http://linux.duke.edu/projects/urlgrabber/download/urlgrabber-%{version}.tar.gz
 # Source0-md5:	621abdb5f839e139c7b27802f99bc72f
 URL:		http://linux.duke.edu/projects/urlgrabber/
