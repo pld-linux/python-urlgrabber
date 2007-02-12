@@ -1,5 +1,5 @@
 Summary:	A high-level cross-protocol url-grabber
-Summary(pl):	Wysokopoziomowa biblioteka do wychwytywania URL-i do wielu protoko≥Ûw
+Summary(pl.UTF-8):   Wysokopoziomowa biblioteka do wychwytywania URL-i do wielu protoko≈Ç√≥w
 Name:		python-urlgrabber
 Version:	3.1.0
 Release:	1
@@ -17,10 +17,10 @@ A high-level cross-protocol url-grabber for Python supporting HTTP,
 FTP and file locations. Features include keepalive, byte ranges,
 throttling, authentication, proxies and more.
 
-%description -l pl
+%description -l pl.UTF-8
 Wysokopoziomowa biblioteka Pythona do wychwytywania URL-i dla wielu
-protoko≥Ûw, obs≥uguj±ca odno∂niki HTTP, FTP i file. Moøliwo∂ci
-obejmuj± po≥±czenia keepalive, przedzia≥y bajtÛw, t≥umienie,
+protoko≈Ç√≥w, obs≈ÇugujƒÖca odno≈õniki HTTP, FTP i file. Mo≈ºliwo≈õci
+obejmujƒÖ po≈ÇƒÖczenia keepalive, przedzia≈Çy bajt√≥w, t≈Çumienie,
 uwierzytelnianie, proxy itp.
 
 %prep
