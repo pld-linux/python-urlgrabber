@@ -1,5 +1,5 @@
 Summary:	A high-level cross-protocol url-grabber
-Summary(pl.UTF-8):   Wysokopoziomowa biblioteka do wychwytywania URL-i do wielu protokołów
+Summary(pl.UTF-8):	Wysokopoziomowa biblioteka do wychwytywania URL-i do wielu protokołów
 Name:		python-urlgrabber
 Version:	3.1.0
 Release:	1
