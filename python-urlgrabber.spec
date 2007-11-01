@@ -11,6 +11,9 @@ Group:		Libraries/Python
 Source0:	http://linux.duke.edu/projects/urlgrabber/download/urlgrabber-%{version}.tar.gz
 # Source0-md5:	3cdb34db3269baf8006da35b9f82d9c9
 URL:		http://linux.duke.edu/projects/urlgrabber/
+BuildRequires:	python >= 1:2.5
+BuildRequires:	rpm-pythonprov
+%pyrequires_eq	python-libs
 Provides:	urlgrabber
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
