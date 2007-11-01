@@ -1,12 +1,15 @@
 Summary:	A high-level cross-protocol url-grabber
 Summary(pl.UTF-8):	Wysokopoziomowa biblioteka do wychwytywania URL-i do wielu protokołów
 Name:		python-urlgrabber
-Version:	3.1.0
+# 3.0.x is stable series (we use that one)
+# 3.1.x is devel series
+Version:	3.0.0
 Release:	1
+Epoch:		1
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://linux.duke.edu/projects/urlgrabber/download/urlgrabber-%{version}.tar.gz
-# Source0-md5:	2a92d8ce0d89c5e772a98e9b8dcd5b73
+# Source0-md5:	3cdb34db3269baf8006da35b9f82d9c9
 URL:		http://linux.duke.edu/projects/urlgrabber/
 Provides:	urlgrabber
 BuildArch:	noarch
@@ -44,3 +47,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/urlgrabber
 %{py_sitescriptdir}/urlgrabber
+%{py_sitescriptdir}/*.egg-info
