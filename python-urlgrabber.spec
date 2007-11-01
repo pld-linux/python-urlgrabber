@@ -6,7 +6,7 @@ Name:		python-urlgrabber
 Version:	3.0.0
 Release:	1
 Epoch:		1
-License:	LGPL
+License:	LGPL v2.1+
 Group:		Libraries/Python
 Source0:	http://linux.duke.edu/projects/urlgrabber/download/urlgrabber-%{version}.tar.gz
 # Source0-md5:	3cdb34db3269baf8006da35b9f82d9c9
