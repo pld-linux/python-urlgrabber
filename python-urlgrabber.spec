@@ -4,7 +4,7 @@ Name:		python-urlgrabber
 # 3.0.x is stable series (we use that one)
 # 3.1.x is devel series
 Version:	3.0.0
-Release:	2
+Release:	3
 Epoch:		1
 License:	LGPL v2.1+
 Group:		Libraries/Python
@@ -41,6 +41,7 @@ python setup.py install \
 	--root=$RPM_BUILD_ROOT
 
 rm -rf $RPM_BUILD_ROOT%{_docdir}/urlgrabber-%{version}
+%py_postclean
 
 %clean
 rm -rf $RPM_BUILD_ROOT
