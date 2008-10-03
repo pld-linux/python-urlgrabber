@@ -4,7 +4,7 @@ Name:		python-urlgrabber
 # 3.0.x is stable series (we use that one)
 # 3.1.x is devel series
 Version:	3.0.0
-Release:	3
+Release:	4
 Epoch:		1
 License:	LGPL v2.1+
 Group:		Libraries/Python
