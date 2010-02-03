@@ -1,14 +1,18 @@
+# TODO
+# - find better solution for unreadable /etc/resolv.conf in pycurl
+#   the problem is actgually in curl-libs, util_curl_new() returns NULL in that case
 Summary:	A high-level cross-protocol url-grabber
 Summary(pl.UTF-8):	Wysokopoziomowa biblioteka do wychwytywania URL-i do wielu protokołów
 Name:		python-urlgrabber
 Version:	3.9.1
-Release:	1
+Release:	2
 Epoch:		1
 License:	LGPL v2.1+
 Group:		Libraries/Python
 Source0:	http://urlgrabber.baseurl.org/download/urlgrabber-%{version}.tar.gz
 # Source0-md5:	00c8359bf71062d0946bacea521f80b4
 Patch1:		urlgrabber-HEAD.patch
+Patch2:		urlgrabber-pycurl-resolv.conf-hack.patch
 URL:		http://urlgrabber.baseurl.org/
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-devel
@@ -34,6 +38,7 @@ uwierzytelnianie, proxy itp.
 %prep
 %setup -q -n urlgrabber-%{version}
 %patch1 -p1
+%patch2 -p1
 
 %build
 %{__python} setup.py build

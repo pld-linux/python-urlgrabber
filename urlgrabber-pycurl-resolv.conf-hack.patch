@@ -1,0 +1,19 @@
+--- urlgrabber-3.9.1/urlgrabber/grabber.py~	2010-02-04 00:34:13.394410346 +0200
++++ urlgrabber-3.9.1/urlgrabber/grabber.py	2010-02-04 00:34:15.851263468 +0200
+@@ -1624,8 +1624,14 @@
+             urllib.addinfourl, via. urllib.URLopener.* """
+         return self.url
+         
+-_curl_cache = pycurl.Curl() # make one and reuse it over and over and over
+-
++try:
++	_curl_cache = pycurl.Curl() # make one and reuse it over and over and over
++except pycurl.error, e:
++	# in pld builders /etc/resolv.conf is not readable and curl throws an error
++	if str(e) == 'initializing curl failed':
++		print e
++	else:
++		raise
+ 
+ #####################################################################
+ # DEPRECATED FUNCTIONS
