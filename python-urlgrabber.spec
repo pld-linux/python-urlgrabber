@@ -12,6 +12,7 @@ Source0:	http://linux.duke.edu/projects/urlgrabber/download/urlgrabber-%{version
 # Source0-md5:	3cdb34db3269baf8006da35b9f82d9c9
 URL:		http://urlgrabber.baseurl.org/
 BuildRequires:	python >= 1:2.5
+BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-libs
 Provides:	urlgrabber
