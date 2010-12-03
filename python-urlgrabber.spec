@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__python} setup.py install \
 	--root=$RPM_BUILD_ROOT
 
-rm -rf $RPM_BUILD_ROOT%{_docdir}/urlgrabber-%{version}
+%{__rm} -r $RPM_BUILD_ROOT%{_docdir}/urlgrabber-%{version}
 %py_postclean
 
 %clean
@@ -55,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/urlgrabber
 %{py_sitescriptdir}/urlgrabber
-%{py_sitescriptdir}/*.egg-info
+%{py_sitescriptdir}/urlgrabber-*.egg-info
