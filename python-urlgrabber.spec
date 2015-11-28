@@ -36,12 +36,11 @@ uwierzytelnianie, proxy itp.
 %patch1 -p1
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %{__rm} -r $RPM_BUILD_ROOT%{_docdir}/urlgrabber-%{version}
 %py_postclean
