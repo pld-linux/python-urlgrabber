@@ -2,7 +2,7 @@ Summary:	A high-level cross-protocol url-grabber
 Summary(pl.UTF-8):	Wysokopoziomowa biblioteka do wychwytywania URL-i do wielu protokołów
 Name:		python-urlgrabber
 Version:	3.9.1
-Release:	6
+Release:	7
 Epoch:		1
 License:	LGPL v2.1+
 Group:		Libraries/Python
