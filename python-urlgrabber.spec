@@ -10,6 +10,7 @@ Source0:	http://urlgrabber.baseurl.org/download/urlgrabber-%{version}.tar.gz
 # Source0-md5:	00c8359bf71062d0946bacea521f80b4
 Patch1:		urlgrabber-HEAD.patch
 URL:		http://urlgrabber.baseurl.org/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-devel
 BuildRequires:	python-pycurl >= 7.19
