@@ -34,7 +34,7 @@ uwierzytelnianie, proxy itp.
 
 %prep
 %setup -q -n urlgrabber-%{version}
-%patch1 -p1
+%patch -P1 -p1
 
 %build
 %py_build
